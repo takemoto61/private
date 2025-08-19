@@ -23,7 +23,7 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: '知足安分・明鏡止水\n急迫敗事・寧耐成事',
+      message: '知足安分・明鏡止水 急迫敗事・寧耐成事',
       copyright: 'Copyright © Masaki Takemoto'
     },    
     returnToTopLabel: '🔝ページ先頭へ',
