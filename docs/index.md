@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Documents & Papers"
-  text: "Store documents & Papers for Private"
+  name: "My Documents"
+  text: "Confidencial"
   tagline: "資格試験などの備忘録"
   actions:
     - theme: brand
