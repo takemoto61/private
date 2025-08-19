@@ -6,13 +6,14 @@ export default defineConfig({
   base: '/private/', // サイトがサブパスで提供される場合のベースパス
   title: "Documents & Papers",
   description: "Store documents & Papers for Private",
+  // if base is set, use /base/favicon.ico
+   head: [['link', { rel: 'icon', href: '/private/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-
     sidebar: [
       {
         text: 'Examples',

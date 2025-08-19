@@ -98,6 +98,8 @@ node_modules/
 
 ![](./images/github_settings.png)
 
+branchを指定するために、一度 deploy from a branch で、設定を行いますが、
+
 ### getHubリポジトリ actions
 
 最後のはまったのは、https://takemoto61.github.io/private/
