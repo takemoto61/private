@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang:"ja-JP",
   base: '/private/', // サイトがサブパスで提供される場合のベースパス
   title: "Documents & Papers",
   description: "Store documents & Papers for Private",
@@ -21,9 +22,15 @@ export default defineConfig({
         ]
       }
     ],
-
+    footer: {
+      message: '知足安分・明鏡止水\n急迫敗事・寧耐成事',
+      copyright: 'Copyright © Masaki Takemoto'
+    },    
+    returnToTopLabel: '🔝ページ先頭へ',
+    /*
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+    */
   }
 })
