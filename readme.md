@@ -86,3 +86,16 @@ node_modules/
 # VitePress build output
 .vitepress/dist
 ```
+
+## gitHub
+
+### gitHub public
+リポジトリを公開にしないと build & deployできないので、公開設定にします。
+
+![](./images/gitHub_public_image.png)
+
+### gitHub 設定
+
+![](./images/github_settings.png)
+
+### getHubリポジトリ actions
