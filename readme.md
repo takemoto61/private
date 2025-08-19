@@ -99,3 +99,6 @@ node_modules/
 ![](./images/github_settings.png)
 
 ### getHubリポジトリ actions
+
+最後のはまったのは、https://takemoto61.github.io/private/
+httpsで、アクセスしないと正常に表示されません。
