@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Documents & Papers"
   text: "Store documents & Papers for Private"
-  tagline: "Why this page don't be showed ?"
+  tagline: "資格試験などの備忘録"
   actions:
     - theme: brand
       text: Markdown Examples
