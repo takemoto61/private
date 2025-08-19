@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/private/", // サイトがサブパスで提供される場合のベースパス
   title: "Documents & Papers",
   description: "Store documents & Papers for Private",
   themeConfig: {
