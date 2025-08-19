@@ -7,7 +7,7 @@ export default defineConfig({
   title: "Documents & Papers",
   description: "Store documents & Papers for Private",
   // if base is set, use /base/favicon.ico
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/docs/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
