@@ -7,6 +7,8 @@ export default defineConfig({
   title: "Documents & Papers",
   description: "Store documents & Papers for Private",
   // if base is set, use /base/favicon.ico
+  // make public directory under root 
+  // place docs > public > favicon.ico
   head: [['link', { rel: 'icon', href: '/private/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
