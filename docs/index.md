@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "My Documents"
-  text: "Confidencial"
+  text: "Confidential"
   tagline: "資格試験などの備忘録"
   actions:
     - theme: brand

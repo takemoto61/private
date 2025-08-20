@@ -16,20 +16,41 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-    sidebar: [
-      {
+    sidebar: {
+      '/': [{
         text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+        collapsed: true,
+      items: [
+        { text: 'Markdown Examples', link: '/markdown-examples' },
+        { text: 'Runtime API Examples', link: '/api-examples' }
+      ]
+    }]},
     footer: {
       message: '知足安分・明鏡止水 急迫敗事・寧耐成事',
       copyright: 'Copyright © Masaki Takemoto'
     },    
     returnToTopLabel: '🔝ページ先頭へ',
+    search: {
+      provider: 'local',
+      options: {
+        miniSearch: {
+          options: {
+            tokenize: (term) => {
+              if (typeof term === 'string') term = term.toLowerCase()
+              const segmenter = Intl.Segmenter && new Intl.Segmenter('ja-JP', { granularity: 'word' })
+              if (!segmenter) return [term]
+              const tokens = []
+              for (const seg of segmenter.segment(term)) {
+                // @ts-ignore
+                // ignore spaces
+                if (seg.segment.trim() !== '') tokens.push(seg.segment);
+              }
+              return tokens;
+            },
+          },
+        },
+      },
+    }
     /*
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
@@ -37,3 +58,4 @@ export default defineConfig({
     */
   }
 })
+
