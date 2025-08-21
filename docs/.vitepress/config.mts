@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress'
+import { type DefaultTheme, defineConfig } from 'vitepress'
+import { generateSidebar }  from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -20,11 +21,17 @@ export default defineConfig({
       '/': [{
         text: 'Examples',
         collapsed: true,
-      items: [
-        { text: 'Markdown Examples', link: '/markdown-examples' },
-        { text: 'Runtime API Examples', link: '/api-examples' }
-      ]
-    }]},
+        items: [
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text:'法律',
+        link:'/law/'
+      }],
+    '/law/': sidebarLaws(),
+  },
     footer: {
       message: '知足安分・明鏡止水 急迫敗事・寧耐成事',
       copyright: 'Copyright © Masaki Takemoto'
@@ -59,3 +66,12 @@ export default defineConfig({
   }
 })
 
+function sidebarLaws(): DefaultTheme.SidebarItem[] {
+  return [{
+      text: 'HOME',
+      base: '/',
+      link:'.'
+    },
+
+  ]
+}
