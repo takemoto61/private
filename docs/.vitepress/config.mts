@@ -8,7 +8,7 @@ import { generateSidebar }  from 'vitepress-sidebar'
 export default withMermaid({
   lang:"ja-JP",
   base: '/private/', // サイトがサブパスで提供される場合のベースパス
-  title: "Documents & Papers",
+  title: "My Private",
   description: "Store documents & Papers for Private",
   // if base is set, use /base/favicon.ico
   // make public directory under root 
@@ -87,6 +87,7 @@ function sidebarLaws(): DefaultTheme.SidebarItem[] {
     {     
       text: '法律',
       base: '/law/',
+      collapsed:true,
       //@ts-ignore
       items:  generateSidebar({
         documentRootPath:'docs',
