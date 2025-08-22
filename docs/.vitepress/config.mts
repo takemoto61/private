@@ -1,8 +1,11 @@
 import { type DefaultTheme, defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import { generateSidebar }  from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+//➖ export default defineConfig({
+// ➕ plugin mermaid 
+export default withMermaid({
   lang:"ja-JP",
   base: '/private/', // サイトがサブパスで提供される場合のベースパス
   title: "Documents & Papers",
@@ -63,6 +66,15 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
     */
+  },
+  mermaid: {
+    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+    theme: 'forest'
+  },
+  // optionally set additional config for plugin itself with MermaidPluginConfig
+  mermaidPlugin: { 
+    // set additional css classes for parent container 
+    class: 'mermaid my-class'
   }
 })
 
@@ -72,6 +84,15 @@ function sidebarLaws(): DefaultTheme.SidebarItem[] {
       base: '/',
       link:'.'
     },
-
+    {     
+      text: '法律',
+      base: '/law/',
+      //@ts-ignore
+      items:  generateSidebar({
+        documentRootPath:'docs',
+        scanStartPath: 'law',
+        useTitleFromFrontmatter: true,
+      })
+    }
   ]
 }
