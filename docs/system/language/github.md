@@ -5,11 +5,7 @@ outline: 1
 ---
 # Account
 
-|ITEM|Private|Sungreen|Lefty|
-|--|--|--|--|
-|User ID|takemoto61|sun-green|lefty-japan|
-|mail|takemoto.masaki@gmail.com|takemoto@sungreen.biz|takemoto@lefty.biz|
-|password|rna77x61|GIrna77x|GIrna77x|
+ 🔑[アカウント情報](https://septseas-my.sharepoint.com/personal/takemoto_septseas_com/_layouts/Doc.aspx?sourcedoc={A670029D-F259-4DA7-975D-C1B669122ECA}&wd=target%28Application%2F%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%88%E6%A5%AD%E5%8B%99%E7%B3%BB%EF%BC%89.one%7C97A775E2-2EE9-4D18-98E3-9BC7D236F48B%2FGitHub%7C2E9B0708-3AE1-4030-AF44-7EC84C6F505A%2F%29&wdpartid={59487911-4858-04A6-17E2-50356DCBF32D}{1}&wdsectionfileid={17D2579B-EFAF-4DD3-9872-B7A7415D888B})
 
 会社のアカウントは、書類などの保存用に利用します。  
 個人アカウントは、プログラムなどに利用します
