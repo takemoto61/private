@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "My Documents"
-  text: "Confidential"
-  tagline: "資格試験などの備忘録"
+  name: ""
+  text: "Guide & Manual"
+  tagline: "手続きなどの個人的な備忘録"
   actions:
     - theme: brand
       text: Markdown Examples

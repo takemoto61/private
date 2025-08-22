@@ -9,7 +9,7 @@ export default withMermaid({
   lang:"ja-JP",
   base: '/private/', // サイトがサブパスで提供される場合のベースパス
   title: "My Private",
-  description: "Store documents & Papers for Private",
+  description: "Guide & Manual",
   // if base is set, use /base/favicon.ico
   // make public directory under root 
   // place docs > public > favicon.ico
