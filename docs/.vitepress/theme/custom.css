@@ -1,0 +1,6 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+:root {
+   --vp-font-family-base: 'Noto Sans JP medium', sans-serif;
+  --vp-font-family-mono: 'Noto Sans JP medium', sans-serif;
+}

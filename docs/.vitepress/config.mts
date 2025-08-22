@@ -20,21 +20,8 @@ export default withMermaid({
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-    sidebar: {
-      '/': [{
-        text: 'Examples',
-        collapsed: true,
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text:'法律',
-        link:'/law/'
-      }],
-    '/law/': sidebarLaws(),
-  },
+    sidebar: mySidebar(),
+
     footer: {
       message: '知足安分・明鏡止水 急迫敗事・寧耐成事',
       copyright: 'Copyright © Masaki Takemoto'
@@ -78,12 +65,26 @@ export default withMermaid({
   }
 })
 
-function sidebarLaws(): DefaultTheme.SidebarItem[] {
-  return [{
-      text: 'HOME',
-      base: '/',
-      link:'.'
-    },
+
+/* sidebar default for forgotten
+  sidebar:  {
+      '/': [{
+        text: 'Examples',
+        collapsed: true,
+        items: [
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text:'法律',
+        link:'/law/'
+      }],
+    '/law/': sidebarLaws(),
+  },
+*/
+function mySidebar(): DefaultTheme.SidebarItem[] {
+  return [
     {     
       text: '法律',
       base: '/law/',
@@ -94,6 +95,35 @@ function sidebarLaws(): DefaultTheme.SidebarItem[] {
         scanStartPath: 'law',
         useTitleFromFrontmatter: true,
       })
+    },
+    {
+      text: 'システム',
+      base: '/system/',
+      collapsed:true,
+      items: [
+        {
+          text:'SERVER',
+          base:'/system/server/',
+          collapsed:true,
+          // @ts-ignore
+          items: generateSidebar({
+            documentRootPath:'docs',
+            scanStartPath: 'system/server',
+            useTitleFromFrontmatter: true,
+          })
+        },
+        {
+          text:'LANGUAGE',
+          base: '/system/language/',
+          collapsed:true,
+          // @ts-ignore
+          items: generateSidebar({
+            documentRootPath:'docs',
+            scanStartPath: 'system/language',
+            useTitleFromFrontmatter: true,
+          })
+        }
+      ]
     }
   ]
 }
