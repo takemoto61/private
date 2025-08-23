@@ -197,10 +197,10 @@ mariabackup --copy-back --target-dir I:\xampp\mysql\data\backup
 ### バックアップ
 
 1. phpMyadmin 
-  ![](./images/MariaDB/phpmyadminbackup1.jpg)
+  ![](./images/mariadb-backup1.jpg)
 
 1. 「Export」をクリック
-  ![](./images/MariaDB/phpmyadminbackup2.jpg)
+  ![](./images/mariadb-backup2.jpg)
 
   Quick：全てのデータベースをサクッとバックアップしたい時に使用  
   Custom：特定のデータベースのみの時や、形式を選択したいときに使用  
@@ -210,7 +210,7 @@ zipファイルがダウンロードされれば終了
 ### リストア
 
 1. 手順①：復元対象のデータベースを削除
-  ![](./images/MariaDB/phpmyadminrestore1.jpg)
+  ![](./images/mariadb-store1.jpg)
 
 1. 「Import」をクリック
 1. バックアップしたファイルを選択
