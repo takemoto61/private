@@ -113,7 +113,7 @@ CREATE TABLE `innodb_table_stats` (
 
 これに関しては、スタート時に、値がセットされないだけなので、無視してよいエラーです【Warning】
 
-![](images/xampp_mariadb.png)
+![](images/mariadb_202508230902.png)
 
 
 # バックアップとリストア
